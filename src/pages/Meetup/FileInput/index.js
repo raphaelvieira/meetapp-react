@@ -53,7 +53,6 @@ export default function FileInput(props) {
     <Container hasFile={hasFile || hasInitialFile}>
       <label htmlFor="file">
         <div>
-          <img src={updatedPreview || preview || pickImage} alt="" />
           <input
             type="file"
             id="file"
@@ -62,6 +61,7 @@ export default function FileInput(props) {
             onChange={handleChange}
             ref={ref}
           />
+          <img src={updatedPreview || preview || pickImage} alt="" />
         </div>
       </label>
     </Container>

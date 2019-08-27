@@ -19,11 +19,11 @@ export const Container = styled.div`
       height: 400px;
       background: #000;
       flex: 1;
-
+      text-align: center;
       img {
+        margin-top: ${props => (!props.hasFile ? '151px' : '0')};
         width: ${props => (!props.hasFile ? '173px' : '900px')};
         height: ${props => (!props.hasFile ? '98px' : '400px')};
-        align-self: center;
         border: ${props =>
           props.hasFile ? '3px solid rgba(255, 255, 255, 0.3)' : '0'};
         background: #eee;
