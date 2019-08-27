@@ -13,7 +13,7 @@ export default function Dashboard() {
   const [date] = useState(new Date());
   useEffect(() => {
     async function loadMeetup() {
-      const response = await api.get('meetups');
+      const response = await api.get('organizing');
 
       /**
        *  {
@@ -27,7 +27,7 @@ export default function Dashboard() {
         const compareDate = utcToZonedTime(meetup.date, timezone);
         return {
           ...meetup,
-          formattedDate: format(compareDate, "MMMM, d 'at ' hh:mm ", {
+          formattedDate: format(compareDate, "MMMM, d 'at ' hh:mm  aa", {
             locale: en,
           }),
         };

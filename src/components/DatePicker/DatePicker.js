@@ -26,9 +26,9 @@ export default function DatePicker({ name, selectedDate }) {
     <>
       <ReactDatePicker
         showTimeSelect
-        timeFormat="HH:mm"
+        timeFormat="hh:mm aa"
         timeIntervals={15}
-        dateFormat="MMMM d, yyyy h:mm aa"
+        dateFormat="MMMM d, yyyy hh:mm aa"
         locale={en}
         timeCaption="time"
         name={fieldName}

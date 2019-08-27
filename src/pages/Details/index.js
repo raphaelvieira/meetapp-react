@@ -21,7 +21,7 @@ export default function Details(props) {
       const compareDate = utcToZonedTime(response.data.date, timezone);
       const data = {
         ...response.data,
-        formattedDate: format(compareDate, "MMMM, d 'at ' hh:mm ", {
+        formattedDate: format(compareDate, "MMMM, d 'at ' hh:mm aa", {
           locale: en,
         }),
       };

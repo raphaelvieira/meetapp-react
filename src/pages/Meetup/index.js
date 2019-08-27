@@ -44,7 +44,7 @@ export default function Meetup(props) {
       const compareDate = utcToZonedTime(response.data.date, timezone);
       const data = {
         ...response.data,
-        formattedDate: format(compareDate, 'yyyy-MM-dd hh:mm', {
+        formattedDate: format(compareDate, 'yyyy-MM-dd HH:mm', {
           locale: en,
         }),
       };
